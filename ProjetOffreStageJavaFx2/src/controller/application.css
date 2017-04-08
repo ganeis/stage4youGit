@@ -1,0 +1,42 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.text.content{
+	-fx-font-family:"System Font";
+	-fx-text-fill:#0fc1f2;
+
+}
+
+.label {
+    -fx-font-size: 11pt;
+    -fx-font-family: "System Font";
+    -fx-text-fill: #0fc1f2;
+    
+}
+
+.anchor {
+    -fx-background-image:url('../image/518164-backgrounds.jpeg');
+}
+
+.button{
+	-fx-background-color: #0fc1f2;
+	-fx-background-radius:10;
+	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+	
+	-fx-font-family:"System Font";
+	-fx-text-fill:white;
+}
+
+.textfield {
+    -fx-background-color: #0fc1f2 , white , white;
+    -fx-background-insets: 0 0 -1 0, 0 0 0 0, 0 -1 0 -1;
+
+}
+
+.imageview{
+	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+.textfield:focused {
+    -fx-background-color: #0fc1f2 , white , white;
+    -fx-background-insets: 0 0 -1 0, 0 0 0 0, 0 -1 0 -1;
+}
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="311.0" prefWidth="624.0" style="-fx-background-color: white;" stylesheets="@../controller/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pAdministrateur.AdminController">
+   <children>
+      <ImageView fx:id="imgModifierMonCompte" fitHeight="85.0" fitWidth="93.0" layoutX="14.0" layoutY="132.0" onMouseClicked="#handleMouseAction" onMouseEntered="#changeColorIn" onMouseExited="#changeColorOut" pickOnBounds="true" styleClass="imageview" visible="false">
+         <image>
+            <Image url="@../image/AAdmin.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgModifierCompte" fitHeight="85.0" fitWidth="188.0" focusTraversable="true" layoutX="117.0" layoutY="45.0" onMouseClicked="#handleMouseAction" onMouseEntered="#changeColorIn" onMouseExited="#changeColorOut" pickOnBounds="true" styleClass="imageview">
+         <image>
+            <Image url="@../image/AdminModif.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgConsulter" fitHeight="85.0" fitWidth="93.0" layoutX="117.0" layoutY="132.0" onMouseClicked="#handleMouseAction" onMouseEntered="#changeColorIn" onMouseExited="#changeColorOut" pickOnBounds="true" styleClass="imageview">
+         <image>
+            <Image url="@../image/Consulter.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgValider" fitHeight="85.0" fitWidth="93.0" layoutX="117.0" layoutY="222.0" onMouseClicked="#handleMouseAction" onMouseEntered="#changeColorIn" onMouseExited="#changeColorOut" pickOnBounds="true" styleClass="imageview">
+         <image>
+            <Image url="@../image/validation.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgSignalements" fitHeight="85.0" fitWidth="93.0" layoutX="213.0" layoutY="132.0" onMouseClicked="#handleMouseAction" onMouseEntered="#changeColorIn" onMouseExited="#changeColorOut" pickOnBounds="true" styleClass="imageview">
+         <image>
+            <Image url="@../image/Signalements.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgModifierEtudiant" fitHeight="85.0" fitWidth="93.0" layoutX="14.0" layoutY="45.0" onMouseClicked="#handleMouseAction" onMouseEntered="#changeColorIn" onMouseExited="#changeColorOut" pickOnBounds="true" styleClass="imageview" visible="false">
+         <image>
+            <Image url="@../image/AEtudiant.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgModifierEntreprise" fitHeight="85.0" fitWidth="93.0" layoutX="14.0" layoutY="222.0" onMouseClicked="#handleMouseAction" onMouseEntered="#changeColorIn" onMouseExited="#changeColorOut" pickOnBounds="true" styleClass="imageview" visible="false">
+         <image>
+            <Image url="@../image/AEntreprise.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="quitter" fitHeight="16.0" fitWidth="15.0" layoutX="604.0" layoutY="6.0" onMouseClicked="#quitter" pickOnBounds="true">
+         <image>
+            <Image url="@../image/Quitter.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgDéconnexion" fitHeight="85.0" fitWidth="93.0" layoutX="213.0" layoutY="222.0" onMouseClicked="#handleMouseAction" onMouseEntered="#changeColorIn" onMouseExited="#changeColorOut" pickOnBounds="true" styleClass="imageview">
+         <image>
+            <Image url="@../image/Déconnexion.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="228.0" fitWidth="288.0" layoutX="324.0" layoutY="61.0" opacity="0.74" pickOnBounds="true" styleClass="imageview">
+         <image>
+            <Image url="@../image/stage4you.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

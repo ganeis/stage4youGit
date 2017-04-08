@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="683.0" styleClass="anchor" stylesheets="@../controller/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pEntreprise.consulterEntrepriseController">
+   <children>
+      <TableView fx:id="mesOffres" layoutY="230.0" onMouseClicked="#afficher" prefHeight="270.0" prefWidth="220.0">
+        <columns>
+            <TableColumn prefWidth="219.0" resizable="false" text="Mes Offres">
+               <columns>
+                <TableColumn fx:id="Colonne" prefWidth="219.0" resizable="false" text="Résultats" />
+               </columns>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="220.0" prefHeight="506.0" prefWidth="463.0">
+         <children>
+            <ImageView fitHeight="440.0" fitWidth="436.0" layoutX="15.0" layoutY="13.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../image/Fond.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="17.0" layoutY="22.0" text="Nom de l'entreprise :" />
+            <Label layoutX="35.0" layoutY="80.0" text="Libelle :" />
+            <Label layoutX="185.0" layoutY="229.0" text="Descriptif :" />
+            <Label layoutX="28.0" layoutY="174.0" text="Durée :" />
+            <Label layoutX="28.0" layoutY="204.0" text="Date de debut :" />
+            <Label layoutX="28.0" layoutY="131.0" text="Domaine :" />
+            <Label layoutX="283.0" layoutY="131.0" text="N° Offre :" />
+            <Text fx:id="textNumeroOffre" layoutX="356.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T" />
+            <Text fx:id="textDomaine" layoutX="102.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T" />
+            <Text fx:id="textLibelle" layoutX="98.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T" />
+            <Text fx:id="textNomEntreprise" layoutX="176.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T" />
+            <Text fx:id="textDuree" layoutX="84.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T" />
+            <Text fx:id="textDate" layoutX="145.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T" />
+            <Text fx:id="textDescriptif" layoutX="37.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T" />
+            <Button fx:id="btnSignaler" layoutX="127.0" layoutY="465.0" mnemonicParsing="false" onAction="#signaler" text="Signaler" visible="false" />
+            <ComboBox fx:id="signalerBox" layoutX="259.0" layoutY="465.0" prefWidth="150.0" visible="false" />
+            <Button fx:id="btnOkSignaler" layoutX="419.0" layoutY="465.0" mnemonicParsing="false" onAction="#signaler" text="Ok" visible="false" />
+            <Button fx:id="btnPrecedent" layoutX="12.0" layoutY="465.0" mnemonicParsing="false" onAction="#precedent" prefHeight="27.0" prefWidth="103.0" text="Precedent" />
+            <TextField fx:id="textFieldCommentaire" layoutX="232.0" layoutY="438.0" promptText="commentaire" visible="false" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="78.0" layoutY="14.0" text="Recherche" />
+      <TextField fx:id="textfieldRecherche" layoutX="16.0" layoutY="81.0" prefHeight="27.0" prefWidth="95.0" visible="false" />
+      <ComboBox fx:id="rechercheBox" layoutX="14.0" layoutY="42.0" prefWidth="150.0" />
+      <Button fx:id="btnOk" layoutX="175.0" layoutY="42.0" mnemonicParsing="false" onAction="#buttonHandleAction" prefHeight="27.0" prefWidth="38.0" text="Ok" />
+      <Button fx:id="btnTrier" layoutX="87.0" layoutY="149.0" mnemonicParsing="false" onAction="#buttonHandleAction" text="Trier" visible="false" />
+   </children>
+</AnchorPane>

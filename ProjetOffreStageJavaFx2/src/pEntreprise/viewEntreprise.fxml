@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mapage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="760.0" stylesheets="@../controller/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pEntreprise.entrepriseController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="764.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/518164-backgrounds.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="516.0" fitWidth="670.0" layoutX="48.0" layoutY="42.0" pickOnBounds="true" styleClass="imageview" AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="48.0" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="42.0">
+         <image>
+            <Image url="@../image/backgroundGG.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="loginField" blendMode="MULTIPLY" layoutX="128.0" layoutY="112.0" styleClass="textfield" />
+      <PasswordField fx:id="passwordField" blendMode="MULTIPLY" layoutX="473.0" layoutY="113.0" styleClass="textfield" />
+      <Label layoutX="90.0" layoutY="202.0" text="Nom Entreprise :" />
+      <Label layoutX="91.0" layoutY="268.0" text="Numero et Rue :" />
+      <Label layoutX="97.0" layoutY="332.0" text="Code Postale :" />
+      <Label layoutX="450.0" layoutY="332.0" text="Ville :" />
+      <Label layoutX="410.0" layoutY="202.0" text="Secteur d'activité :" />
+      <TextField fx:id="nomEntrepriseField" blendMode="MULTIPLY" layoutX="199.0" layoutY="188.0" styleClass="textfield" />
+      <ComboBox fx:id="secteurbox" blendMode="MULTIPLY" layoutX="532.0" layoutY="197.0" prefWidth="150.0" style="-fx-background-color: #0fc1f2;" />
+      <TextField fx:id="adresseField" blendMode="MULTIPLY" layoutX="194.0" layoutY="254.0" prefHeight="27.0" prefWidth="498.0" styleClass="textfield" />
+      <TextField fx:id="codePostalField" blendMode="MULTIPLY" layoutX="192.0" layoutY="318.0" styleClass="textfield" />
+      <TextField fx:id="villeField" blendMode="MULTIPLY" layoutX="492.0" layoutY="318.0" styleClass="textfield" />
+      <TextField fx:id="mailField" blendMode="MULTIPLY" layoutX="167.0" layoutY="380.0" styleClass="textfield" />
+      <Label layoutX="414.0" layoutY="394.0" text="Telephone :" />
+      <ImageView fitHeight="28.0" fitWidth="52.0" layoutX="383.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Phone%20not%20Being%20Used%20Filled.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="telephoneField" blendMode="MULTIPLY" layoutX="492.0" layoutY="380.0" styleClass="textfield" />
+      <Label layoutX="231.0" layoutY="56.0" text="Création Compte Entreprise " textAlignment="CENTER" textFill="#0fc1f2">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnValider" defaultButton="true" layoutX="591.0" layoutY="483.0" mnemonicParsing="false" onAction="#Validation" prefHeight="45.0" prefWidth="91.0" text="Valider" textFill="WHITE" />
+      <Button fx:id="btnPrecedent" defaultButton="true" layoutX="84.0" layoutY="483.0" mnemonicParsing="false" onAction="#precedent" prefHeight="45.0" prefWidth="89.0" text="Precedent" textFill="WHITE" />
+      <ImageView fitHeight="173.0" fitWidth="211.0" layoutX="310.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="errorlogin" layoutX="136.0" layoutY="140.0" prefHeight="13.0" prefWidth="100.0" textFill="#ee0000">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorNom" layoutX="205.0" layoutY="215.0" prefHeight="13.0" prefWidth="158.0" textFill="#ee0000">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorMdp" layoutX="499.0" layoutY="140.0" prefHeight="13.0" prefWidth="141.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorAdr" layoutX="200.0" layoutY="281.0" prefHeight="13.0" prefWidth="256.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorCP" layoutX="195.0" layoutY="346.0" prefHeight="13.0" prefWidth="158.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorMail" layoutX="175.0" layoutY="407.0" prefHeight="13.0" prefWidth="158.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorVille" layoutX="492.0" layoutY="346.0" prefHeight="13.0" prefWidth="167.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorTel" layoutX="503.0" layoutY="407.0" prefHeight="13.0" prefWidth="150.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="29.0" fitWidth="28.0" layoutX="96.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Name%20Filled-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="28.0" layoutX="436.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Lock%20Filled-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="28.0" layoutX="96.0" layoutY="389.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Email%20Filled.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="129.0" layoutY="394.0" text="Mail :" />
+      <Label layoutX="384.0" layoutY="145.0" text="(Min 8 caractères)" textFill="#0fc1f2" />
+   </children>
+</AnchorPane>

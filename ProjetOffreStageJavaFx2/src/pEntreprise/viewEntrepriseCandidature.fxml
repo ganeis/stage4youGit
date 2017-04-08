@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="445.0" prefWidth="515.0" styleClass="anchor" stylesheets="@../controller/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pEntreprise.entrepriseCandidatureController">
+   <children>
+      <ImageView fx:id="quitter" fitHeight="17.0" fitWidth="21.0" layoutX="537.0" layoutY="6.0" onMouseClicked="#quitter" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Quitter.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="candidatures" layoutY="-1.0" onMouseClicked="#afficher" prefHeight="402.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="199.0" text="Candidatures">
+               <columns>
+                  <TableColumn fx:id="cNumeroOffre" prefWidth="75.0" text="N°Offre" />
+                  <TableColumn fx:id="cIdEtudiant" prefWidth="124.0" text="Candidat" />
+               </columns>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <Button fx:id="btnAccepter" layoutX="406.0" layoutY="402.0" mnemonicParsing="false" onAction="#accepter" text="Accepter" visible="false" />
+      <Button fx:id="btnRefuser" layoutX="487.0" layoutY="402.0" mnemonicParsing="false" onAction="#refuser" text="Refuser" visible="false" />
+      <TextField fx:id="textfieldCommentaire" layoutX="207.0" layoutY="402.0" prefHeight="27.0" prefWidth="188.0" promptText="commentaire" visible="false" />
+      <ImageView fx:id="imgCv" fitHeight="380.0" fitWidth="327.0" layoutX="207.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnPrecedent" layoutX="71.0" layoutY="404.0" mnemonicParsing="false" onAction="#precedent" text="Precedent" />
+   </children>
+</AnchorPane>

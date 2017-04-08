@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" prefHeight="352.0" prefWidth="554.0" style="-fx-background-color: black;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuLoginController">
+   <children>
+      <ImageView fitHeight="429.0" fitWidth="554.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/518164-backgrounds.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="360.0" fitWidth="245.0" layoutX="155.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true" styleClass="imageview">
+         <image>
+            <Image url="@../image/Login.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="21.0" fitWidth="27.0" layoutX="182.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Name%20Filled-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="182.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Lock%20Filled-50.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSeConnecter" layoutX="169.0" layoutY="320.0" mnemonicParsing="false" onAction="#seConnecter" style="-fx-background-color: #0fc1f2; -fx-background-radius: 10;" text="Se connecter" textFill="WHITE" />
+      <Button fx:id="btnSeEnregistrer" layoutX="282.0" layoutY="320.0" mnemonicParsing="false" onAction="#afficher" style="-fx-background-color: #0fc1f2; -fx-background-radius: 10;" text="S'enregistrer" textFill="WHITE" />
+      <ImageView fitHeight="63.0" fitWidth="97.0" layoutX="230.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="170.0" fitWidth="213.0" layoutX="192.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logo.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="password" layoutX="207.0" layoutY="273.0" styleClass="textfield" />
+      <Label fx:id="errorLogin" layoutX="213.0" layoutY="265.0" prefHeight="11.0" prefWidth="146.0" textFill="#f50101">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorMdp" layoutX="207.0" layoutY="301.0" prefHeight="11.0" prefWidth="158.0" textFill="RED">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCreationEntreprise" layoutX="170.0" layoutY="365.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="100.0" style="-fx-background-color: red;" text="Entreprise" textFill="WHITE" visible="false" />
+      <Button fx:id="btnCreationEtudiant" layoutX="283.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="97.0" style="-fx-background-color: red;" text="Etudiant" textFill="WHITE" visible="false" />
+      <ImageView fx:id="quitter" fitHeight="17.0" fitWidth="21.0" layoutX="532.0" layoutY="6.0" onMouseClicked="#quitter" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Quitter.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="identifiant" layoutX="208.0" layoutY="241.0" prefHeight="27.0" prefWidth="165.0" styleClass="textfield" />
+   </children>
+</AnchorPane>

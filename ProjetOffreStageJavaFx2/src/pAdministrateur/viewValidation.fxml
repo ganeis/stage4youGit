@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane styleClass="anchor" stylesheets="@../controller/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pAdministrateur.validationController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="683.0">
+         <children>
+            <TableView fx:id="mesOffres" onMouseClicked="#afficher" prefHeight="500.0" prefWidth="220.0">
+               <columns>
+                  <TableColumn prefWidth="219.0" resizable="false" text="les Offres de Stage">
+                     <columns>
+                        <TableColumn fx:id="Colonne" prefWidth="219.0" resizable="false" text="En attente de Validation" />
+                     </columns>
+                  </TableColumn>
+               </columns>
+            </TableView>
+            <AnchorPane layoutX="220.0" prefHeight="506.0" prefWidth="463.0">
+               <children>
+                  <ImageView fitHeight="440.0" fitWidth="440.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/Fond.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="17.0" layoutY="22.0" text="Nom de l'entreprise :" />
+                  <Label layoutX="35.0" layoutY="63.0" text="Libelle :" />
+                  <Label layoutX="190.0" layoutY="211.0" text="Descriptif :" />
+                  <Label layoutX="37.0" layoutY="137.0" text="Durée :" />
+                  <Label layoutX="190.0" layoutY="137.0" text="Date de debut :" />
+                  <Label layoutX="19.0" layoutY="99.0" text="Domaine :" />
+                  <Label layoutX="231.0" layoutY="99.0" text="N° Offre :" />
+                  <Text fx:id="textNumeroOffre" layoutX="307.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T" />
+                  <Text fx:id="textDomaine" layoutX="99.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T" />
+                  <Text fx:id="textLibelle" layoutX="98.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T" wrappingWidth="205.0" />
+                  <Text fx:id="textNomEntreprise" layoutX="170.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T" />
+                  <Text fx:id="textDuree" layoutX="98.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T" />
+                  <Text fx:id="textDate" layoutX="307.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T" />
+                  <Text fx:id="textDescriptif" layoutX="37.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T" />
+                  <Button layoutX="264.0" layoutY="465.0" mnemonicParsing="false" onAction="#effacer" text="Effacer" />
+                  <Button layoutX="358.0" layoutY="465.0" mnemonicParsing="false" onAction="#valider" prefHeight="27.0" prefWidth="68.0" text="Valider" />
+                  <Button fx:id="btnPrecedent" layoutX="21.0" layoutY="465.0" mnemonicParsing="false" onAction="#precedent" text="Precedent" />
+               </children>
+            </AnchorPane>
+            <Separator layoutX="215.0" layoutY="3.0" orientation="VERTICAL" prefHeight="492.0" prefWidth="11.0" />
+            <TextField fx:id="textfieldNomEntreprise" layoutX="16.0" layoutY="81.0" prefHeight="27.0" prefWidth="95.0" visible="false" />
+            <TextField fx:id="textfieldLibelle" layoutX="117.0" layoutY="81.0" prefHeight="27.0" prefWidth="95.0" visible="false" />
+            <TextField fx:id="textfieldDuree" layoutX="117.0" layoutY="116.0" prefHeight="27.0" prefWidth="95.0" visible="false" />
+            <Button fx:id="btnTrier" layoutX="87.0" layoutY="149.0" mnemonicParsing="false" onAction="#buttonHandleAction" text="Trier" visible="false" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

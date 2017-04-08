@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="683.0" styleClass="anchor" stylesheets="@../controller/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pAdministrateur.consulterAdminController">
+   <children>
+      <TableView fx:id="mesOffres" layoutY="230.0" onMouseClicked="#afficher" prefHeight="270.0" prefWidth="220.0" styleClass="imageview">
+        <columns>
+            <TableColumn prefWidth="219.0" resizable="false" text="les Offres de Stage">
+               <columns>
+                <TableColumn fx:id="Colonne" prefWidth="219.0" resizable="false" text="Résultats" />
+               </columns>
+            </TableColumn>
+        </columns>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TableView>
+      <AnchorPane layoutX="220.0" prefHeight="506.0" prefWidth="463.0">
+         <children>
+            <ImageView fitHeight="443.0" fitWidth="442.0" layoutX="15.0" layoutY="13.0" pickOnBounds="true" smooth="false" styleClass="imageview">
+               <image>
+                  <Image url="@../image/Fond.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="17.0" layoutY="22.0" text="Nom de l'entreprise :" />
+            <Label layoutX="162.0" layoutY="87.0" text="Libelle :" />
+            <Label layoutX="185.0" layoutY="229.0" text="Descriptif :" />
+            <Label layoutX="28.0" layoutY="166.0" text="Durée :" />
+            <Label layoutX="28.0" layoutY="204.0" text="Date de debut :" />
+            <Label layoutX="28.0" layoutY="131.0" text="Domaine :" />
+            <Label layoutX="347.0" layoutY="38.0" text="N° Offre :" />
+            <Text fx:id="textNumeroOffre" layoutX="419.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T" />
+            <Text fx:id="textDomaine" layoutX="106.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T" />
+            <Text fx:id="textLibelle" layoutX="227.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T" />
+            <Text fx:id="textNomEntreprise" layoutX="176.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T" />
+            <Text fx:id="textDuree" layoutX="85.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T" />
+            <Text fx:id="textDate" layoutX="145.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T" />
+            <Text fx:id="textDescriptif" layoutX="37.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T" />
+            <Button fx:id="btnPrecedent" layoutX="12.0" layoutY="465.0" mnemonicParsing="false" onAction="#precedent" prefHeight="27.0" prefWidth="103.0" text="Precedent" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="78.0" layoutY="14.0" text="Recherche" />
+      <TextField fx:id="textfieldRecherche" layoutX="16.0" layoutY="81.0" prefHeight="27.0" prefWidth="95.0" visible="false" />
+      <ComboBox fx:id="rechercheBox" layoutX="14.0" layoutY="42.0" prefWidth="150.0" />
+      <Button fx:id="btnOk" layoutX="175.0" layoutY="42.0" mnemonicParsing="false" onAction="#buttonHandleAction" prefHeight="27.0" prefWidth="38.0" text="Ok" />
+      <Button fx:id="btnTrier" layoutX="87.0" layoutY="149.0" mnemonicParsing="false" onAction="#buttonHandleAction" text="Trier" visible="false" />
+   </children>
+</AnchorPane>
