@@ -2,8 +2,10 @@ package pEtudiant;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
+import application.Etudiant;
 import application.MainApp;
 import controller.MenuLoginController;
 import javafx.fxml.Initializable;
@@ -38,6 +40,9 @@ public class etudiantMenuController implements Initializable {
 	
 	@FXML
 	private ImageView imgConsulter;
+	
+    @FXML
+    private ImageView photo;
 	
 	private String user;
 	
@@ -97,6 +102,12 @@ public class etudiantMenuController implements Initializable {
 		// TODO Auto-generated method stub
 		user=MenuLoginController.getUser();
 		userLabel.setText(user);
+		try {
+			photo.setImage(Etudiant.getPhoto(user));
+		} catch (SQLException | IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }

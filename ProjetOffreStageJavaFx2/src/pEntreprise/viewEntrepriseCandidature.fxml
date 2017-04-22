@@ -28,5 +28,10 @@
       <TextField fx:id="textfieldCommentaire" layoutX="207.0" layoutY="402.0" prefHeight="27.0" prefWidth="188.0" promptText="commentaire" visible="false" />
       <ImageView fx:id="imgCv" fitHeight="380.0" fitWidth="327.0" layoutX="207.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
       <Button fx:id="btnPrecedent" layoutX="71.0" layoutY="404.0" mnemonicParsing="false" onAction="#precedent" text="Precedent" />
+      <ImageView fx:id="photo" fitHeight="104.0" fitWidth="100.0" layoutX="453.0" layoutY="153.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/defautPhoto.jpeg" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

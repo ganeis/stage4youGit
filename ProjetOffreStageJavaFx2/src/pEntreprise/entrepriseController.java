@@ -24,6 +24,8 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
@@ -89,7 +91,8 @@ public  class entrepriseController implements Initializable {
     private Label errorMail;
     @FXML
    ComboBox <enumSecteur> secteurbox=new ComboBox<>();
-   
+   @FXML
+   private ImageView quitter;
    
    private AnchorPane root;
 
@@ -107,7 +110,9 @@ public  class entrepriseController implements Initializable {
 	String mail=null;
 	String tel=null;
 	String secteur=null;
-	
+	public void quitter(MouseEvent event){
+		System.exit(1);
+	}
 	public void precedent(ActionEvent event) throws IOException{
 		Stage stage; 
 	    Parent root;

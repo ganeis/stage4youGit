@@ -113,5 +113,10 @@
       </ImageView>
       <Label layoutX="129.0" layoutY="394.0" text="Mail :" />
       <Label layoutX="384.0" layoutY="145.0" text="(Min 8 caractères)" textFill="#0fc1f2" />
+      <ImageView fx:id="quitter" fitHeight="17.0" fitWidth="21.0" layoutX="738.0" layoutY="6.0" onMouseClicked="#quitter" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Quitter.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

@@ -221,7 +221,7 @@ public class signalementController implements Initializable {
 	    	dateDebutOffre=java.sql.Date.valueOf(dateDebut.getValue());
 	    }
 	    
-	    System.out.println(dateDebutOffre);
+	   
 	    if(verifchamp()){
 	    	
 	    	domaineOffre=textfieldDomaine.getText();

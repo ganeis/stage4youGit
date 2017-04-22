@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
@@ -22,10 +23,10 @@
                </image>
             </ImageView>
             <TextField fx:id="idField" layoutX="178.0" layoutY="52.0" styleClass="textfield" />
-            <TextField fx:id="nomField" layoutX="178.0" layoutY="187.0" styleClass="textfield" />
-            <TextField fx:id="prenomField" layoutX="178.0" layoutY="270.0" styleClass="textfield" />
-            <Label layoutX="123.0" layoutY="200.0" text="Nom :" />
-            <Label layoutX="106.0" layoutY="283.0" text="Prenom :" />
+            <TextField fx:id="nomField" layoutX="178.0" layoutY="174.0" styleClass="textfield" />
+            <TextField fx:id="prenomField" layoutX="178.0" layoutY="221.0" styleClass="textfield" />
+            <Label layoutX="123.0" layoutY="187.0" text="Nom :" />
+            <Label layoutX="106.0" layoutY="234.0" text="Prenom :" />
             <Button layoutX="420.0" layoutY="397.0" mnemonicParsing="false" onAction="#miseAjour" text="Mise a jour" />
             <Button layoutX="336.0" layoutY="397.0" mnemonicParsing="false" onAction="#effacer" text="Effacer" />
             <Button fx:id="btnPrecedent" layoutX="36.0" layoutY="397.0" mnemonicParsing="false" onAction="#precedent" text="Precedent" />
@@ -40,6 +41,24 @@
             <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="137.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../image/Lock%20Filled-50.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="69.0" layoutY="283.0" text="Date de naissance :" />
+            <DatePicker fx:id="pickerDate" layoutX="217.0" layoutY="300.0" prefHeight="27.0" prefWidth="128.0" />
+            <Label fx:id="dateLabel" layoutX="217.0" layoutY="283.0" prefHeight="17.0" prefWidth="103.0" />
+            <ImageView fx:id="photo" fitHeight="104.0" fitWidth="100.0" layoutX="356.0" layoutY="122.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../image/defautPhoto.jpeg" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnPhoto" layoutX="421.0" layoutY="214.0" mnemonicParsing="false" onAction="#ajoutPhoto" styleClass="roundButton" stylesheets="@../controller/application.css" text="+">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="quitter" fitHeight="17.0" fitWidth="21.0" layoutX="497.0" layoutY="6.0" onMouseClicked="#quitter" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Quitter.png" />
                </image>
             </ImageView>
          </children>

@@ -22,11 +22,10 @@ public class MainApp extends Application {
 	primaryStage.initStyle(StageStyle.UNDECORATED);
 	this.stage=primaryStage;
 	lancement();
-	// je test 
 	
-	//github
-	// interface + class avk les delete select insert etc...
-	// interface pour la class test
+	
+
+
 	
 	//acepter refuser marche pas
 	// apres accepter ou refusuer enlever de l'affichage du tableview( page entreprise candidature) avec init

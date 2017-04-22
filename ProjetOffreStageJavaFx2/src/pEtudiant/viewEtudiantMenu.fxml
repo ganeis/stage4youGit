@@ -50,6 +50,11 @@
                   </ImageView>
                </children>
             </AnchorPane>
+            <ImageView fx:id="photo" fitHeight="51.0" fitWidth="53.0" layoutX="273.0" layoutY="5.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../image/defautPhoto.jpeg" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </children>

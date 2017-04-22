@@ -40,3 +40,11 @@
     -fx-background-insets: 0 0 -1 0, 0 0 0 0, 0 -1 0 -1;
 }
 
+.roundButton{
+                -fx-background-radius: 5em; 
+                -fx-min-width: 30px; 
+                -fx-min-height: 30px; 
+                -fx-max-width: 30px; 
+                -fx-max-height: 30px;
+        }
+

@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import application.Connexion;
+import application.Etudiant;
 import application.OffreStage;
 import application.Utilisateur;
 import candidature.Candidature;
@@ -60,6 +61,8 @@ public class entrepriseCandidatureController implements Initializable{
 	
 	@FXML
 	private TableColumn cIdEtudiant;
+	   @FXML
+	    private ImageView photo;
 	
 	
 	public void precedent(ActionEvent event) throws IOException{
@@ -104,14 +107,15 @@ public class entrepriseCandidatureController implements Initializable{
 			   init();
 	    }
 	
-	public void afficher(){
+	public void afficher() throws SQLException, IOException{
+		photo.setVisible(true);
 		btnAccepter.setVisible(true);
 		btnRefuser.setVisible(true);
 		textfieldCommentaire.setVisible(true);
 		
-		Candidature c=candidatures.getSelectionModel().getSelectedItem(); // on recupere la candidature sur laquel on clik
+		Candidature c=candidatures.getSelectionModel().getSelectedItem();
+		photo.setImage(Etudiant.getPhoto(c.getIdEtudiant()));
 		String s="File:"+c.getChemin();	
-		System.out.println(s);
 		Image img=new Image(s);
 		StackPane sp = new StackPane();
 		ImageView imgView = new ImageView(img);
@@ -196,7 +200,7 @@ public class entrepriseCandidatureController implements Initializable{
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		init();
-		
+		photo.setVisible(false);
 	}
 	
 	
